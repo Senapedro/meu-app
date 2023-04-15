@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Reverse from './componentes/reverse';
+import Welcome from './componentes/welcome';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Olá
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Olá</h1>
+      <Welcome nome='Pedro' sobrenome='Sena'/>
+      <Welcome nome='Ana'/>
+      {/* <Reverse texto= "Olá"/>
+      <Reverse texto= "pedro"/> */}
+      <Reverse>
+        Meu texto
+      </Reverse>
     </div>
+    
   );
 }
 
