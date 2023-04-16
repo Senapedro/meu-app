@@ -1,18 +1,19 @@
 import './App.css';
-import Reverse from './componentes/reverse';
-import Welcome from './componentes/welcome';
+import Reverse from './componentes/Reverse/reverse';
+import TodoList from './componentes/TodoList/Todolist';
+import Welcome from './componentes/Welcome/welcome';
 
 function App() {
   return (
     <div className="App">
-      <h1>Olá</h1>
       <Welcome nome='Pedro' sobrenome='Sena'/>
-      <Welcome nome='Ana'/>
-      {/* <Reverse texto= "Olá"/>
-      <Reverse texto= "pedro"/> */}
-      <Reverse>
-        Meu texto
-      </Reverse>
+      <div className="reverse">
+        <p className="app-text"> Os textos abaixo são criados pelo componentes Reverse:</p>
+        <Reverse>
+          Meu texto
+        </Reverse>
+      </div>
+      <TodoList/>
     </div>
     
   );
